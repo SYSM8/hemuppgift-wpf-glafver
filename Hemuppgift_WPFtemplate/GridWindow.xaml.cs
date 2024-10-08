@@ -48,9 +48,11 @@ namespace Hemuppgift_WPFtemplate
                     Content = $"Row {row}, Column {column}",
                     Background = Brushes.LightGreen,
                     HorizontalAlignment = HorizontalAlignment.Stretch,
-                    VerticalAlignment = VerticalAlignment.Stretch
+                    VerticalAlignment = VerticalAlignment.Stretch,
+                    Name = "btnGrid"
                 };
 
+                DynamicGrid.Children.Clear();
                 Grid.SetRow(gridButton, row);
                 Grid.SetColumn(gridButton, column);
                 DynamicGrid.Children.Add(gridButton);
